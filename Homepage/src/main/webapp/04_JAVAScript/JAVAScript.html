@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>JAVAScript 화면</h1>
+
+	<ul>
+	 	 <li><a href ="../02_HTML/HTML.html">HTML</a></li>
+		 <li><a href ="../03_CSS/CSS.html">CSS</a></li>
+		 <li><a href ="../04_JAVAScript/JAVAScript.html">JAVAScript</a></li>
+	</ul>
+	
+	<form action="../01_login/login.html">
+		<input type="submit" value="로그인">
+	</form>
+	
+	<form action="../00_Home/main.html">
+		<input type="submit" value="home">
+	</form>
+
+
+	<br/>
+	<input type="button" value="하이" onclick="alert('하이')">
+	
+	<input type="button" value="밤" onclick="
+		document.querySelector('body').style.backgroundColor ='black'
+		document.querySelector('body').style.color ='white'
+	">
+	
+	<input type="button" value="낮" onclick="
+		document.querySelector('body').style.color='black'
+		document.querySelector('body').style.backgroundColor='white'
+	">
+	
+	<input id="night_day" type="button" value="밤" onclick="
+	if(document.querySelector('#night_day').value === '밤'){
+		document.querySelector('body').style.color='white';
+		document.querySelector('body').style.backgroundColor='black';
+		document.querySelector('#night_day').value='낮';
+		} 
+	else{
+		document.querySelector('body').style.color='black';
+		document.querySelector('body').style.backgroundColor='white';
+		document.querySelector('#night_day').value='밤';
+	}
+	">
+	<input type="button" value="밤" onclick="
+	if(this.value === '밤'){
+		document.querySelector('body').style.color='white';
+		document.querySelector('body').style.backgroundColor='black';
+		this.value='낮';
+		} 
+	else{
+		document.querySelector('body').style.color='black';
+		document.querySelector('body').style.backgroundColor='white';
+		this.value='밤';
+	}
+	">
+	
+	<input type="button" value="밤" onclick="
+	var target = document.querySelector('body');
+	if(this.value === '밤'){
+		target.style.color='white';
+		target.style.backgroundColor='black';
+		this.value='낮';
+		} 
+	else{
+		target.style.color='black';
+		target.style.backgroundColor='white';
+		this.value='밤';
+	}
+	">
+	
+	
+	
+	
+	
+	<p>
+	document.querySelector(' ') = 해당 태그를 선택한다
+	</p>
+	
+	<p>
+	onclic="  " 다음에는 자바스크립트 언어가 와야함 
+	</p>
+	
+	<p>
+	서버와 사용자가 상호작용 하기 위해서 만들어진 언어 <br/>
+	그래서 검색할 때에는 javascript ~~~ event 라고 작성하면 찾기 쉬움<br/>
+	사용자가 ~~행동을 할 때 적용되는 이벤트 라는 뜻
+	</p>
+	
+	<p>
+	어떤 tag 안에 조건문이든 뭐든 사용할 때 값을 가져오려면 java와 동일하게 
+	this.value 같은걸로 선언
+	</p>
+</body>
+</html>
